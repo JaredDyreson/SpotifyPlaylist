@@ -30,7 +30,7 @@ setup(
     install_requires = [
       'spotipy==2.5.0',
       'spotui==0.1.5'
-    ]
+    ],
     include_package_data=True,
     classifiers=['Programming Language :: Python :: 3.8']
 )
