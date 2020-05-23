@@ -1,13 +1,14 @@
-#!/usr/bin/env python3.5
+#!/usr/bin/env python3.8
 
 import spotipy
 import spotipy.util as util
 from spotipy.oauth2 import SpotifyClientCredentials
 import requests
 import json
+import os
 
-# SPOTIFY_APP_ID = "e1f239ec0ee443689d6786fd3f397af1"
-# SPOTIFY_APP_SECRET = "cbecd4d200f8482d910cb1db77d6f10c"
+SPOTIFY_APP_ID = os.environ["SPOTIFY_AUTHENTICATOR_CLIENT_ID"]
+SPOTIFY_APP_SECRET = os.environ["SPOTIFY_AUTHENTICATOR_CLIENT_SECRET"]
 
 class Playlist():
 	def __init__(self, url: str, name="", list_of_tracks=[]):
